@@ -62,11 +62,11 @@ function removeFromCart(item) {
     
     if (item === cart[i].itemString) {
       cart = cart.splice(i,1);
-      itemInCart = true;
+      itemInCart = false;
     }
   }
   
-  if(!itemInCart) {
+  if(itemInCart) {
     cart = 'That item is not in your cart.';
   }
   
