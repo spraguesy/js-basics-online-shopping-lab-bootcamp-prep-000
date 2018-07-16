@@ -56,21 +56,21 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  
+  var newCart = cart;
   var noItem = true;
   for (var i =0; i < cart.length; i++) {
     
     if (item === cart[i].itemString) {
-      cart.splice(i,1);
+      newCart = cart.splice(i,1);
       noItem = false;
     }
   }
   
   if(noItem) {
-    cart = 'That item is not in your cart.';
+    newCart = 'That item is not in your cart.';
   }
   
-  return cart
+  return newCart
 }
 
 function placeOrder(cardNumber) {
