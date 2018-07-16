@@ -57,16 +57,16 @@ function total() {
 function removeFromCart(item) {
   // write your code here
   
-  var itemInCart = true;
+  var noItem = true;
   for (var i =0; i < cart.length; i++) {
     
     if (item === cart[i].itemString) {
       cart = cart.splice(i,1);
-      itemInCart = false;
+      noItem = false;
     }
   }
   
-  if(itemInCart) {
+  if(noItem) {
     cart = 'That item is not in your cart.';
   }
   
