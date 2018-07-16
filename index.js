@@ -21,7 +21,7 @@ function addToCart(item) {
 function viewCart() {
   // write your code here
   var itemString;
-  var grammarString;
+  var grammarString = '';
   var fullString = '';
   if (cart.length > 0) {
     for (var i = 0; i < cart.length; i++) {
