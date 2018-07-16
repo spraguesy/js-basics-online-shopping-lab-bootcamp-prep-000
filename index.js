@@ -61,7 +61,7 @@ function removeFromCart(item) {
   for (var i =0; i < cart.length; i++) {
     
     if (item === cart[i].itemString) {
-      cart.splice(i,1);
+      newCart = cart.splice(i,1);
       console.log(cart);
       noItem = false;
     }
