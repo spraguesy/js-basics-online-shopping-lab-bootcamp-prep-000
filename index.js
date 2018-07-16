@@ -25,13 +25,14 @@ function viewCart() {
   if (cart.length > 0) {
     for (var i = 0; i < cart.length; i++) {
       
-      itemString = `${cart[i].itemName} at $${cart[i].itemPrice}`
+      
       if (i < cart.length && cart.length !==1) {
         itemString += `, `;
         if (i === cart.length -1) {
           itemString += `and `
         }
       }
+      itemString = `${cart[i].itemName} at $${cart[i].itemPrice}`
       fullString += itemString
     }  
     
