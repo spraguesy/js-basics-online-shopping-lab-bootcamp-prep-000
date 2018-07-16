@@ -27,9 +27,9 @@ function viewCart() {
       
       itemString = `${cart[i].itemName} at $${cart[i].itemPrice}`
       if (i < cart.length -1 && i !==0) {
-        itemString += ", ";
+        itemString += `, `;
         if (i === (cart.length -1)) {
-          itemString += "and "
+          itemString += `and `
         }
       }
       fullString += itemString
