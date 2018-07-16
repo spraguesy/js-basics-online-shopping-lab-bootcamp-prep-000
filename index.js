@@ -21,18 +21,19 @@ function addToCart(item) {
 function viewCart() {
   // write your code here
   var itemString;
+  var grammarString;
   var fullString = '';
   if (cart.length > 0) {
     for (var i = 0; i < cart.length; i++) {
       
       
       if (i < cart.length && cart.length !==1) {
-        itemString += `, `;
+        grammarString += `, `;
         if (i === cart.length -1) {
-          itemString += `and `
+          grammarString += `and `
         }
       }
-      itemString += `${cart[i].itemName} at $${cart[i].itemPrice}`
+      itemString = grammarString + `${cart[i].itemName} at $${cart[i].itemPrice}`
       fullString += itemString
     }  
     
