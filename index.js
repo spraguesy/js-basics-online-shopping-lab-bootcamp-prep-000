@@ -79,7 +79,7 @@ function placeOrder(cardNumber) {
   if (cardNumber === '') {
     finishedTransaction = "Sorry, we don't have a credit card on file for you."
   } else {
-    finishedTransaction = `Your total csto is $${total()}, which will be charged to the card ${cardNumber}.`
+    finishedTransaction = `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`
     cart = [];
   }
   
