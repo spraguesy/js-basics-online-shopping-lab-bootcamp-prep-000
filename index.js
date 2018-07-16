@@ -70,7 +70,7 @@ function removeFromCart(item) {
     cart = 'That item is not in your cart.';
   }
   
-  return newCart
+  return cart
 }
 
 function placeOrder(cardNumber) {
