@@ -32,7 +32,7 @@ function viewCart() {
           itemString += `and `
         }
       }
-      itemString = `${cart[i].itemName} at $${cart[i].itemPrice}`
+      itemString += `${cart[i].itemName} at $${cart[i].itemPrice}`
       fullString += itemString
     }  
     
