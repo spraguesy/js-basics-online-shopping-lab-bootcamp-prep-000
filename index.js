@@ -28,7 +28,7 @@ function viewCart() {
       itemString = '';
       grammarString = '';
       
-      if (i < cart.length && cart.length !==1) {
+      if (i < cart.length && cart.length !==1 && i !==0) {
         grammarString += `, `;
         if (i === cart.length -1) {
           grammarString += `and `
