@@ -25,7 +25,8 @@ function viewCart() {
   var fullString = '';
   if (cart.length > 0) {
     for (var i = 0; i < cart.length; i++) {
-      
+      itemString = '';
+      grammerString = '';
       
       if (i < cart.length && cart.length !==1) {
         grammarString += `, `;
